@@ -1,5 +1,5 @@
 {% set name = "minestrone" %}
-{% set version = "0.6.2" %}
+{% set version = "0.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/minestrone-{{ version }}.tar.gz
-  sha256: bf751a2770f72af0418daad43a1eeb4cc7a0992744308ac0059a0f0d26335ca9
+  sha256: 026ac918a9c2116479ba002abde5cadfe7a3c7add608b63087ed8882cbf13b24
 
 build:
   noarch: python

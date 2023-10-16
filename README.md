@@ -1,11 +1,11 @@
-About minestrone
-================
+About minestrone-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/minestrone-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/adamghill/minestrone/
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/minestrone-feedstock/blob/main/LICENSE.txt)
 
 Summary: Search, modify, and parse messy HTML with ease.
 
