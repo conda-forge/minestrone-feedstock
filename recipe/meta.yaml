@@ -6,21 +6,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/minestrone-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/minestrone-{{ version }}.tar.gz
   sha256: 8fbb646a8a10480496113f51f998a82054ecaf24a21324a8a01bafd9a84a656a
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - pip
     - poetry-core >=1.0.0
-    - python >=3.6,<4.0
+    - python {{ python_min }}
   run:
-    - python >=3.6,<4.0
+    - python >={{ python_min }},<4.0
     - beautifulsoup4 >=4.10.0,<5.0.0
 
 test:
@@ -30,6 +30,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/adamghill/minestrone/
